@@ -1,0 +1,19 @@
+{
+  "name": "tenda-solidity",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "BSL-1.1",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "start": "hardhat node",
+    "deploy": "hardhat run scripts/deploy_tenda.ts"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.3"
+  }
+}

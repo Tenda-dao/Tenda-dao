@@ -1,0 +1,32 @@
+{
+  "name": "tenda-dao",
+  "version": "1.0.0",
+  "description": "Tenda - A DAO-Based Cloud Adoption Community for Stray Animals",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikkkp/Tenda-dao.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikkkp/Tenda-dao/issues"
+  },
+  "homepage": "https://github.com/ikkkp/Tenda-dao#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "eslint": "^9.2.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
