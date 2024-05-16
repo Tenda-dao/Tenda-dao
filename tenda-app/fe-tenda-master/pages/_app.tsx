@@ -18,6 +18,7 @@ const connectors = ({ chainId }: { chainId?: number }): Connector[] => {
   const rpcUrl =
     chains.find((x) => x.id === chainId)?.rpcUrls?.[0] ??
     chain.mainnet.rpcUrls[0];
+  console.log(chains);
   return [
     new InjectedConnector({ chains }),
     new WalletConnectConnector({
